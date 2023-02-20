@@ -8,13 +8,13 @@ new = json.dumps(data , indent =2 ,sort_keys=True)
 listx = []
 for stuff in data :
     listx.append(stuff)
-listx = json.dumps(listx,indent=2,sort_keys=True)
-print(listx)
+
+for l in listx:
+    print(l)
 
 #makes to dict not done
-# dictx = ()
-# for k in data:
-#     dictx(k:)
+print(new)
+
 
 #make list if species is setosa and display details
 a = []
@@ -24,7 +24,10 @@ for flowers in data:
         a.append(flowers)
         count+=1
 new_a = json.dumps(a,indent=2)
-print(new_a)
+print("\n details of setosa \n")
+for m in a:
+    print(m)
+#print(new_a)
 print(count)
 
 #to print min petal area and max sepal area in each species
