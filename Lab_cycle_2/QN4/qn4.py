@@ -29,16 +29,16 @@ class Box:
 bx = [Box(random.randint(1,100),random.randint(1,100),random.randint(1,100)) for i in range(10)]
 # bx1 = Box(random.randint(1,100),random.randint(1,100),random.randint(1,100))
 # bx2 = Box(random.randint(1,100))
-area_box = [i.area() for i in bx]
-vol_box = [i.vol() for i in bx]
+area_box = [_.area() for _ in bx]
+vol_box = [_.vol() for _ in bx]
 ratio_box = [round(y/x,2) for x,y in zip(area_box,vol_box)]
 # print(area_box)
 # print(vol_box)
 ind = ratio_box.index(max(ratio_box))
-print("max ratio b/w are and vol of the given boxes are ",max(ratio_box))
-print("\n The details of the box are \n")
-print("area ", area_box[ind])
-print("vol ",vol_box[ind])
-print(" dimensions \n","length ",bx[ind].length,", breadth" ,bx[ind].breadth,", height ",bx[ind].height)
+print("\nMax ratio b/w are and vol of the given boxes are ",max(ratio_box))
+print("\n=== The details of the box are ===")
+print("Area = ", area_box[ind])
+print("Volume = ",vol_box[ind])
+print("\n==== dimensions ====\nlength ",bx[ind].length,", breadth" ,bx[ind].breadth,", height ",bx[ind].height,"\n================")
 # print(bx.area())
 # print(bx.vol())
