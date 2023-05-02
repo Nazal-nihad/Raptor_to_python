@@ -138,7 +138,7 @@ while True:
             y_point = event.pos[1]//100
             m_row = x_point//2
             m_col = y_point//2
-            print(x_point, y_point)
+            # print(x_point, y_point)
             # print(m_row, m_col)
             if x_point > 5 or y_point > 5:
                 restart()
@@ -151,7 +151,7 @@ while True:
                     if checkwin():
                         # checkwin()
                         win_check = False
-                        print("Player 1 won")
+                        # print("Player 1 won")
                     else:
                         player = 2
                 elif player == 2:
@@ -160,10 +160,10 @@ while True:
                     if checkwin():
                         # checkwin()
                         win_check = False
-                        print("player 2 won")
+                        # print("player 2 won")
                     else:
                         player = 1
-                print(board)
+                # print(board)
 
     draw_board()
     end_button()
