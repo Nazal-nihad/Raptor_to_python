@@ -38,7 +38,7 @@ def draw_board():
 
 def drawX(cell, x_pos=0, y_pos=0):
     x = pygame.image.load(
-        'Lab_cycle_3/tic_tac_toe/img/x.png').convert_alpha()
+        'Lab_cycle_3/QN1/img/x.png').convert_alpha()
     x = pygame.transform.rotozoom(x, 0, 0.175)
     cell.blit(x, (x_pos, y_pos))
 
@@ -47,7 +47,7 @@ def drawX(cell, x_pos=0, y_pos=0):
 
 def drawO(cell, x_pos=0, y_pos=0):
     o = pygame.image.load(
-        'Lab_cycle_3/tic_tac_toe/img/o.png').convert_alpha()
+        'Lab_cycle_3/QN1/img/o.png').convert_alpha()
     o = pygame.transform.rotozoom(o, 0, 0.3)
     cell.blit(o, (x_pos, y_pos))
 
