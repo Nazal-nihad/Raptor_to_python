@@ -1,6 +1,4 @@
-**--- Python Lab_cycles and assignments ---**
 
-Raptor algorithm to python code
 
 **Lab_cycle_1** - code and output for lab cycle 1
 
